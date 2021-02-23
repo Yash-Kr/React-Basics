@@ -4,14 +4,14 @@ import React from 'react';
 class CartItem extends React.Component {
     render(){
     return(
-        <div className="cart-Item">
+        <div className="cart-item">
             <div className="left-block">
-                <img/>
+                <img style={styles.image}/>
             </div>
             <div className="right-block">
-                <div>Phone</div>
-                <div>Rs 999</div>
-                <div>Qty: 1</div>
+                <div style={{fontSize : 25}}>Phone</div>
+                <div style={{color : '#777'}}>Rs 999</div>
+                <div style={{color : '#777'}}>Qty: 1</div>
                 <div className = "cart-item-actions">
                     {/*buttons...*/}
                 </div>
@@ -20,6 +20,15 @@ class CartItem extends React.Component {
       
     )
         
+    }
+}
+
+const styles = {
+    image: {
+      height: 110,
+      width: 110,
+      borderRadius: 4,
+      background: '#777'
     }
 }
 
